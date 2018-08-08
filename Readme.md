@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Владимир Казаков](https://up.htmlacademy.ru/htmlcss/22/user/77211).
-* Наставник: [Филипп Шамсиев](https://htmlacademy.ru/profile/toolx).
+* Наставник: [Филипп Шамсиев](https://up.htmlacademy.ru/htmlcss/22/user/70260).
 
 ---
 

@@ -138,8 +138,8 @@
           </select>
         </fieldset>
         <fieldset class="form-block">
-          <legend class="filter-legend legend-inline">Цена:</legend>
-          <div class="range-filter">
+          <div class="price-wrapper">
+            <legend class="filter-legend">Цена:</legend>
             <div class="price-inputs">
               <label class="min-price" for="min-price-field">
                 <input class="price-input" type="number" name="min-price" id="min-price-field" value="100"> руб. –
@@ -148,13 +148,13 @@
                 <input class="price-input" type="number" name="max-price" id="max-price-field" value="500"> руб.
               </label>
             </div>
-            <div class="range-controls">
-              <div class="scale">
-                <div class="bar"></div>
-              </div>
-              <div class="toggle min-toggle"></div>
-              <div class="toggle max-toggle"></div>
+          </div>
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
             </div>
+            <div class="toggle min-toggle"></div>
+            <div class="toggle max-toggle"></div>
           </div>
         </fieldset>
         <fieldset class="form-block">

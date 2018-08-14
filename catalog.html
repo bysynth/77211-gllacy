@@ -50,7 +50,7 @@
             <div class="dropdown-wrapper">
               <form class="search-form" action="#" method="GET">
                 <input type="text" name="search-field" id="search-field" placeholder="Что ищем?">
-                <input type="submit"><!-- По идее должен быть скрыт? Или он не нужен?-->
+                <input class="visually-hidden" type="submit">
               </form>
             </div>
           </li>
@@ -65,7 +65,7 @@
                 <div class="entrance-links">
                   <a class="entrance-link" href="#">Забыли пароль?</a>
                   <a class="entrance-link" href="#">Новая регистрация</a>
-                </div><!-- Нормально ли включать в форму элементы, которые имеют косвенное отношение к форме? -->
+                </div>
               </form>
             </div>
           </li>
@@ -76,7 +76,9 @@
             <table class="basket-table">
               <tr>
                 <td class="basket-del">
-                  <!-- svg icon close -->
+                  <button class="button-del">
+                    <!-- svg icon X -->
+                  </button>
                 </td>
                 <td class="basket-img">
                   <img src="http://placehold.it/33x33" alt="Пломбир с апельсиновым джемом">
@@ -87,7 +89,9 @@
               </tr>
               <tr>
                 <td class="basket-del">
-                  <!-- svg icon close -->
+                  <button class="button-del">
+                    <!-- svg icon X -->
+                  </button>
                 </td>
                 <td class="basket-img">
                   <img src="http://placehold.it/33x33" alt="Клубничный пломбир с присыпкой из белого шоколада">
@@ -106,9 +110,7 @@
     </nav>
     <div class="shop-info">
       <p class="work-time">с 10 до 20, ежедневно</p>
-      <p class="telephone">
-        <a href="+78124502525">8 812 450-25-25</a>
-      </p>
+      <p class="telephone">8 812 450-25-25</p>
     </div>
   </header>
 
@@ -131,7 +133,7 @@
         <fieldset class="form-block">
           <legend class="filter-legend">Сортировка:</legend>
           <select name="sort-field" id="sort-select">
-            <option value="popular">по популярности</option>
+            <option value="popular" selected>по популярности</option>
             <option value="less">сначала недорогие</option>
             <option value="more">сначала дорогие</option>
             <option value="fat">по жирности</option>

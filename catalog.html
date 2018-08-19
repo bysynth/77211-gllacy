@@ -10,7 +10,7 @@
 
   <header class="header">
     <nav class="navigation">
-      <a class="header-logo">
+      <a class="header-logo" href="index.html">
         <img src="img/logo.svg" alt="Логотип Gllacy Shop" width="154" height="64">
       </a>
       <ul class="navigation">
@@ -48,7 +48,8 @@
             <!-- svg icon -->
             <span class="visually-hidden">Поиск</span>
             <div class="dropdown-wrapper">
-              <form class="search-form" action="#" method="GET">
+              <form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
+                <label class="visually-hidden" for="search-field">Что ищем?</label>
                 <input type="text" name="search-field" id="search-field" placeholder="Что ищем?">
                 <input class="visually-hidden" type="submit">
               </form>
@@ -58,8 +59,10 @@
             <!-- svg icon -->
             Вход
             <div class="dropdown-wrapper">
-              <form class="entrance-form" action="#" method="POST">
+              <form class="entrance-form" action="https://echo.htmlacademy.ru" method="POST">
+                <label class="visually-hidden" for="email-field">Электронная почта</label>
                 <input type="email" name="email-field" id="email-field" placeholder="Электронная почта">
+                <label class="visually-hidden" for="password-field">Пароль</label>
                 <input type="password" name="password-field" id="password-field" placeholder="Пароль">
                 <button class="button button-entrance" type="submit">Войти</button>
                 <div class="entrance-links">
@@ -77,6 +80,7 @@
               <tr>
                 <td class="basket-del">
                   <button class="button-del" type="button">
+                    <span class="visually-hidden">Удалить товар</span>
                     <!-- svg icon X -->
                   </button>
                 </td>
@@ -90,6 +94,7 @@
               <tr>
                 <td class="basket-del">
                   <button class="button-del" type="button">
+                    <span class="visually-hidden">Удалить товар</span>
                     <!-- svg icon X -->
                   </button>
                 </td>
@@ -129,7 +134,7 @@
     <h1 class="page-title">Сливочное мороженое</h1>
     <section class="filters">
       <h2 class="visually-hidden">Фильтр товаров</h2>
-      <form class="filter-form" action="#" method="GET">
+      <form class="filter-form" action="https://echo.htmlacademy.ru" method="GET">
         <fieldset class="form-block">
           <legend class="filter-legend">Сортировка:</legend>
           <select name="sort-field" id="sort-select">
@@ -371,6 +376,7 @@
       <ul class="pagination">
         <li class="pagination-item">
           <a class="pagination-link pagination-prev pagination-disabled" href="#">
+            <span class="visually-hidden">Назад</span>
             <!-- svg icon left small -->
           </a>
         </li>
@@ -391,6 +397,7 @@
         </li>
         <li class="pagination-item">
           <a class="pagination-link next" href="#">
+            <span class="visually-hidden">Вперед</span>
             <!-- svg icon right small -->
           </a>
         </li>
@@ -403,25 +410,25 @@
       <li class="social-item">
         <a class="social-button" href="#">
           <!-- svg icon -->
-          <span class="visually-hidden">Twitter</span>
+          <span class="visually-hidden">Мы в Twitter</span>
         </a>
       </li>
       <li class="social-item">
         <a class="social-button" href="#">
           <!-- svg icon -->
-          <span class="visually-hidden">Instagram</span>
+          <span class="visually-hidden">Мы в Instagram</span>
         </a>
       </li>
       <li class="social-item">
         <a class="social-button" href="#">
           <!-- svg icon -->
-          <span class="visually-hidden">Facebook</span>
+          <span class="visually-hidden">Мы в Facebook</span>
         </a>
       </li>
       <li class="social-item">
         <a class="social-button" href="#">
           <!-- svg icon -->
-          <span class="visually-hidden">VK</span>
+          <span class="visually-hidden">Мы в VK</span>
         </a>
       </li>
     </ul>

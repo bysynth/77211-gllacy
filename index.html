@@ -48,7 +48,8 @@
           <!-- svg icon -->
           <span class="visually-hidden">Поиск</span>
           <div class="dropdown-wrapper">
-            <form class="search-form" action="#" method="GET">
+            <form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
+              <label class="visually-hidden" for="search-field">Что ищем?</label>
               <input type="text" name="search-field" id="search-field" placeholder="Что ищем?">
               <input class="visually-hidden" type="submit">
             </form>
@@ -58,8 +59,10 @@
           <!-- svg icon -->
           Вход
           <div class="dropdown-wrapper">
-            <form class="entrance-form" action="#" method="POST">
+            <form class="entrance-form" action="https://echo.htmlacademy.ru" method="POST">
+              <label class="visually-hidden" for="email-field">Электронная почта</label>
               <input type="email" name="email-field" id="email-field" placeholder="Электронная почта">
+              <label class="visually-hidden" for="password-field">Пароль</label>
               <input type="password" name="password-field" id="password-field" placeholder="Пароль">
               <button class="button button-entrance" type="submit">Войти</button>
               <div class="entrance-links">
@@ -210,13 +213,15 @@
     <section class="box newsletter">
       <h2 class="visually-hidden">Наша рассылка</h2>
       <p class="newsletter-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-      <form class="subscribe" action="#" method="POST">
+      <form class="subscribe" action="https://echo.htmlacademy.ru" method="POST">
+        <label class="visually-hidden" for="subscribe-field">Электронная почта</label>
         <input type="email" name="subscribe-field" id="subscribe-field" placeholder="Электронная почта">
         <button class="button button-subscribe" type="submit">Отправить</button>
       </form>
     </section>
-    <section class="map"><!-- Картинка карты будет вставляться фоном, сверху будет накладываться карта от Яндекс -->
+    <section class="map">
       <h2 class="visually-hidden">Карта проезда и контакты</h2>
+      <img class="map-image" src="img/map.jpg" alt="Наш адрес: ул. Большая Конюшенная 19/8, Санкт-Петербург">
       <div class="contacts">
         <p class="contacts-desc">Адрес главного офиса и офлайн-магазина:</p>
         <p class="contacts-info">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
@@ -233,25 +238,25 @@
       <li class="social-item">
         <a class="social-button" href="#">
           <!-- svg icon -->
-          <span class="visually-hidden">Twitter</span>
+          <span class="visually-hidden">Мы в Twitter</span>
         </a>
       </li>
       <li class="social-item">
         <a class="social-button" href="#">
           <!-- svg icon -->
-          <span class="visually-hidden">Instagram</span>
+          <span class="visually-hidden">Мы в Instagram</span>
         </a>
       </li>
       <li class="social-item">
         <a class="social-button" href="#">
           <!-- svg icon -->
-          <span class="visually-hidden">Facebook</span>
+          <span class="visually-hidden">Мы в Facebook</span>
         </a>
       </li>
       <li class="social-item">
         <a class="social-button" href="#">
           <!-- svg icon -->
-          <span class="visually-hidden">VK</span>
+          <span class="visually-hidden">Мы в VK</span>
         </a>
       </li>
     </ul>
@@ -277,13 +282,17 @@
 <!-- Modals -->
   <section class="modal modal-feedback">
     <h2 class="modal-title">Мы обязательно вам ответим!</h2>
-    <form class="feedback-form" action="#" method="POST">
+    <form class="feedback-form" action="https://echo.htmlacademy.ru" method="POST">
+      <label class="visually-hidden" for="feedback-name-field">Как вас зовут?</label>
       <input type="text" name="feedback-name-field" id="feedback-name-field" placeholder="Как вас зовут?">
+      <label class="visually-hidden" for="feedback-email-field">Ваша почта для ответа?</label>
       <input type="email" name="feedback-email-field" id="feedback-email-field" placeholder="Ваша почта для ответа?">
+      <label class="visually-hidden" for="feedback-text-field">Напишите что-нибудь</label>
       <textarea name="feedback-text-field" id="feedback-text-field" cols="30" rows="10" placeholder="Напишите что-нибудь..."></textarea>
       <button class="button button-send" type="submit">Отправить</button>
     </form>
-    <button class="modal-close">
+    <button class="modal-close" type="button">
+      <span class="visually-hidden">Закрыть</span>
       <!-- svg icon close -->
     </button>
   </section>

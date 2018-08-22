@@ -6,7 +6,7 @@
   <title>HTML Academy: Глейси | Главная страница</title>
 </head>
 
-<body>
+<body class="bg-first">
 
   <header class="header">
     <nav class="navigation">
@@ -88,32 +88,27 @@
     <h1 class="visually-hidden">Интернет-магазин Glaccy Shop</h1>
     <section class="slider">
       <h2 class="visually-hidden">Рекламные слайды</h2>
-      <!-- inputs for changing slides, будут вынесены в самый верх -->
-      <input type="radio" name="toggle" id="slide-1" checked>
-      <input type="radio" name="toggle" id="slide-2">
-      <input type="radio" name="toggle" id="slide-3">
-      <!-- div with slider controls -->
       <div class="slider-controls">
-        <label for="slide-1">
+        <button class="control-button button-checked" id="slide-1" type="button">
           <span class="visually-hidden">Слайд 1</span>
-        </label>
-        <label for="slide-2">
+        </button>
+        <button class="control-button" id="slide-2" type="button">
           <span class="visually-hidden">Слайд 2</span>
-        </label>
-        <label for="slide-3">
+        </button>
+        <button class="control-button" id="slide-3" type="button">
           <span class="visually-hidden">Слайд 3</span>
-        </label>
+        </button>
       </div>
       <div class="slides">
-        <div class="slide">
+        <div class="slide slide-first">
           <p class="slide-text">Крем-брюле и пломбир с малиновым джемом</p>
           <a href="#" class="button button-slide">Давайте оба!</a>
         </div>
-        <div class="slide">
+        <div class="slide slide-second hidden">
           <p class="slide-text">Шоколадный пломбир и лимонный сорбет</p>
           <a href="#" class="button button-slide">Давайте оба!</a>
         </div>
-        <div class="slide">
+        <div class="slide slide-third hidden">
           <p class="slide-text">Пломбир с помадкой и клубничный щербет</p>
           <a href="#" class="button button-slide">Давайте оба!</a>
         </div>

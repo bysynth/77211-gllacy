@@ -4,16 +4,18 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Глейси | Каталог продукции</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="inner-page">
 
   <header class="header">
     <nav class="navigation">
       <a class="header-logo" href="index.html">
         <img src="img/logo.svg" alt="Логотип Gllacy Shop" width="154" height="64">
       </a>
-      <ul class="navigation">
+      <ul class="navigation-list">
         <li class="navigation-item navigation-current dropdown">
           <a class="navigation-link" href="catalog.html">Каталог</a>
           <div class="dropdown-wrapper">
@@ -21,7 +23,7 @@
               <li class="inner-item">
                 <a class="inner-link important-link" href="#">Новинки</a>
               </li>
-              <li class="inner-item">
+              <li class="inner-item inner-current">
                 <a class="inner-link" href="catalog.html">Сливочное</a>
               </li>
               <li class="inner-item">
@@ -75,7 +77,7 @@
         <li class="basket basket-full dropdown">
           <!-- svg icon -->
           2 товара
-          <div class="inner-basket">
+          <div class="dropdown-wrapper inner-basket">
             <table class="basket-table">
               <tr>
                 <td class="basket-del">
@@ -137,7 +139,7 @@
       <form class="filter-form" action="https://echo.htmlacademy.ru" method="GET">
         <fieldset class="form-block">
           <legend class="filter-legend">Сортировка:</legend>
-          <select name="sort-field" id="sort-select">
+          <select class="custom-select" name="sort-field" id="sort-select">
             <option value="popular" selected>по популярности</option>
             <option value="less">сначала недорогие</option>
             <option value="more">сначала дорогие</option>
@@ -210,7 +212,7 @@
             </li>
           </ul>
         </fieldset>
-        <button class="button button-filter" type="submit">Применить</button>
+        <button class="button-filter" type="submit">Применить</button>
       </form>
     </section>
     <section class="catalog">
@@ -223,9 +225,9 @@
           <p class="product-image">
             <img src="img/product-1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
           </p>
-          <p class="price-price">310
+          <p class="product-price">310
             <!-- svg rub icon -->
-            <span class="weight">/ кг</span>
+            <span class="weight">/кг</span>
           </p>
           <a class="button button-view" href="#">Быстрый просмотр</a>
         </li>
@@ -236,9 +238,9 @@
           <p class="product-image">
             <img src="img/product-2.jpg" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
           </p>
-          <p class="price-price">380
+          <p class="product-price">380
             <!-- svg rub icon -->
-            <span class="weight">/ кг</span>
+            <span class="weight">/кг</span>
           </p>
           <a class="button button-view" href="#">Быстрый просмотр</a>
         </li>
@@ -249,9 +251,9 @@
           <p class="product-image">
             <img src="img/product-3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
           </p>
-          <p class="price-price">380
+          <p class="product-price">380
             <!-- svg rub icon -->
-            <span class="weight">/ кг</span>
+            <span class="weight">/кг</span>
           </p>
           <a class="button button-view" href="#">Быстрый просмотр</a>
         </li>
@@ -262,9 +264,9 @@
           <p class="product-image">
             <img src="img/product-4.jpg" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
           </p>
-          <p class="price-price">380
+          <p class="product-price">380
             <!-- svg rub icon -->
-            <span class="weight">/ кг</span>
+            <span class="weight">/кг</span>
           </p>
           <a class="button button-view" href="#">Быстрый просмотр</a>
         </li>
@@ -275,9 +277,9 @@
           <p class="product-image">
             <img src="img/product-5.jpg" alt="Сливочное с брусничным джемом" width="267" height="267">
           </p>
-          <p class="price-price">325
+          <p class="product-price">325
             <!-- svg rub icon -->
-            <span class="weight">/ кг</span>
+            <span class="weight">/кг</span>
           </p>
           <a class="button button-view" href="#">Быстрый просмотр</a>
         </li>
@@ -288,9 +290,9 @@
           <p class="product-image">
             <img src="img/product-6.jpg" alt="Сливочное-черничное с цельными ягодами черники" width="267" height="267">
           </p>
-          <p class="price-price">410
+          <p class="product-price">410
             <!-- svg rub icon -->
-            <span class="weight">/ кг</span>
+            <span class="weight">/кг</span>
           </p>
           <a class="button button-view" href="#">Быстрый просмотр</a>
         </li>
@@ -301,9 +303,9 @@
           <p class="product-image">
             <img src="img/product-7.jpg" alt="Сливочное-лимонное с карамельной присыпкой" width="267" height="267">
           </p>
-          <p class="price-price">375
+          <p class="product-price">375
             <!-- svg rub icon -->
-            <span class="weight">/ кг</span>
+            <span class="weight">/кг</span>
           </p>
           <a class="button button-view" href="#">Быстрый просмотр</a>
         </li>
@@ -314,9 +316,9 @@
           <p class="product-image">
             <img src="img/product-8.jpg" alt="Сливочное с шоколадной стружкой" width="267" height="267">
           </p>
-          <p class="price-price">375
+          <p class="product-price">375
             <!-- svg rub icon -->
-            <span class="weight">/ кг</span>
+            <span class="weight">/кг</span>
           </p>
           <a class="button button-view" href="#">Быстрый просмотр</a>
         </li>
@@ -327,9 +329,9 @@
           <p class="product-image">
             <img src="img/product-9.jpg" alt="Сливочно-ванильное с кусочками шоколада" width="267" height="267">
           </p>
-          <p class="price-price">440
+          <p class="product-price">440
             <!-- svg rub icon -->
-            <span class="weight">/ кг</span>
+            <span class="weight">/кг</span>
           </p>
           <a class="button button-view" href="#">Быстрый просмотр</a>
         </li>
@@ -340,9 +342,9 @@
           <p class="product-image">
             <img src="img/product-10.jpg" alt="Сливочное с ментоловым сиропом" width="267" height="267">
           </p>
-          <p class="price-price">435
+          <p class="product-price">435
             <!-- svg rub icon -->
-            <span class="weight">/ кг</span>
+            <span class="weight">/кг</span>
           </p>
           <a class="button button-view" href="#">Быстрый просмотр</a>
         </li>
@@ -353,9 +355,9 @@
           <p class="product-image">
             <img src="img/product-11.jpg" alt="Сливочное с кусочками черного шоколада" width="267" height="267">
           </p>
-          <p class="price-price">355
+          <p class="product-price">355
             <!-- svg rub icon -->
-            <span class="weight">/ кг</span>
+            <span class="weight">/кг</span>
           </p>
           <a class="button button-view" href="#">Быстрый просмотр</a>
         </li>
@@ -366,9 +368,9 @@
           <p class="product-image">
             <img src="img/product-12.jpg" alt="Сливочное с мятным сиропом" width="267" height="267">
           </p>
-          <p class="price-price">420
+          <p class="product-price">420
             <!-- svg rub icon -->
-            <span class="weight">/ кг</span>
+            <span class="weight">/кг</span>
           </p>
           <a class="button button-view" href="#">Быстрый просмотр</a>
         </li>

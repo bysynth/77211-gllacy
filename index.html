@@ -52,7 +52,7 @@
           <div class="dropdown-wrapper">
             <form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
               <label class="visually-hidden" for="search-field">Что ищем?</label>
-              <input type="text" name="search-field" id="search-field" placeholder="Что ищем?">
+              <input class="header-input" type="text" name="search-field" id="search-field" placeholder="Что ищем?">
               <input class="visually-hidden" type="submit">
             </form>
           </div>
@@ -63,9 +63,9 @@
           <div class="dropdown-wrapper">
             <form class="entrance-form" action="https://echo.htmlacademy.ru" method="POST">
               <label class="visually-hidden" for="email-field">Электронная почта</label>
-              <input type="email" name="email-field" id="email-field" placeholder="Электронная почта">
+              <input class="header-input" type="email" name="email-field" id="email-field" placeholder="Электронная почта">
               <label class="visually-hidden" for="password-field">Пароль</label>
-              <input type="password" name="password-field" id="password-field" placeholder="Пароль">
+              <input class="header-input" type="password" name="password-field" id="password-field" placeholder="Пароль">
               <button class="button button-entrance" type="submit">Войти</button>
               <div class="entrance-links">
                 <a class="entrance-link" href="#">Забыли пароль?</a>
@@ -119,12 +119,12 @@
     <section class="banners">
       <h2 class="visually-hidden">Рекламные баннеры</h2>
       <ul class="banners-list">
-        <li class="box banner-raspberry">
+        <li class="box banner-box banner-raspberry">
           <h3 class="banner-title">Малинка даром!</h3>
           <p class="banner-text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
           <a class="button button-banner" href="#">Хочу варенье!</a>
         </li>
-        <li class="box banner-chocolate">
+        <li class="box banner-box banner-chocolate">
           <h3 class="banner-title">Шоколадки даром!</h3>
           <p class="banner-text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
           <a class="button button-banner" href="#">Хочу шоколадки!</a>
@@ -213,7 +213,7 @@
         <p class="newsletter-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
         <form class="subscribe" action="https://echo.htmlacademy.ru" method="POST">
           <label class="visually-hidden" for="subscribe-field">Электронная почта</label>
-          <input type="email" name="subscribe-field" id="subscribe-field" placeholder="Электронная почта">
+          <input class="header-input" type="email" name="subscribe-field" id="subscribe-field" placeholder="Электронная почта">
           <button class="button button-subscribe" type="submit">Отправить</button>
         </form>
       </div>
@@ -283,11 +283,11 @@
     <h2 class="modal-title">Мы обязательно вам ответим!</h2>
     <form class="feedback-form" action="https://echo.htmlacademy.ru" method="POST">
       <label class="visually-hidden" for="feedback-name-field">Как вас зовут?</label>
-      <input type="text" name="feedback-name-field" id="feedback-name-field" placeholder="Как вас зовут?">
+      <input class="feedback-input" type="text" name="feedback-name-field" id="feedback-name-field" placeholder="Как вас зовут?">
       <label class="visually-hidden" for="feedback-email-field">Ваша почта для ответа?</label>
-      <input type="email" name="feedback-email-field" id="feedback-email-field" placeholder="Ваша почта для ответа?">
+      <input class="feedback-input" type="email" name="feedback-email-field" id="feedback-email-field" placeholder="Ваша почта для ответа?">
       <label class="visually-hidden" for="feedback-text-field">Напишите что-нибудь</label>
-      <textarea name="feedback-text-field" id="feedback-text-field" cols="30" rows="10" placeholder="Напишите что-нибудь..."></textarea>
+      <textarea class="feedback-input" name="feedback-text-field" id="feedback-text-field" cols="30" rows="10" placeholder="Напишите что-нибудь..."></textarea>
       <button class="button button-send" type="submit">Отправить</button>
     </form>
     <button class="modal-close" type="button">

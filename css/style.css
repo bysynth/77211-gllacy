@@ -57,8 +57,6 @@ body {
   line-height: 16px;
   font-weight: 400;
   color: #ffffff;
-
-  background-color: #849d8f; /* временно */
 }
 
 .container {
@@ -67,8 +65,18 @@ body {
   padding: 0 2.25%;
 }
 
+.bg-first {
+  background-color: #849d8f;
+  background-image: url("../img/slide-1-gradient.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
 .inner-page {
-  /* TODO: gradient in the top of background */
+  background-color: #849d8f;
+  background-image: url("../img/inner-bg-gradient.png");
+  background-position: center top;
+  background-repeat: repeat-x;
 }
 
 /* TODO: Body backgrounds */
@@ -605,7 +613,7 @@ img {
   order: 2;
 }
 
-.product-wrapper {
+.image-price {
   position: relative;
 }
 
@@ -909,9 +917,10 @@ img {
 .breadcrumbs {
   display: flex;
   margin: 0;
-  padding: 0;
-  list-style: none;
   margin-bottom: 8px;
+  padding: 0;
+
+  list-style: none;
 }
 
 .breadcrumbs-item:not(:last-child) {
@@ -925,6 +934,7 @@ img {
 .page-title {
   margin: 0;
   margin-bottom: 25px;
+
   font-size: 35px;
   line-height: 41px;
   font-weight: 700;
@@ -949,11 +959,13 @@ img {
   margin: 0;
   margin-right: 15px;
   padding: 0;
+
   border: none;
 }
 
 .filter-legend {
   margin-bottom: 5px;
+
   font-weight: 500;
 }
 
@@ -974,9 +986,11 @@ img {
 }
 
 .price-input {
+  width: 30px;
+
   font: inherit;
   color: inherit;
-  width: 30px;
+
   background-color: transparent;
   border: none;
 }
@@ -992,6 +1006,7 @@ img {
 .range-controls {
   width: 218px;
   min-height: 36px;
+
   background-color: rgba(248, 247, 244, 0.2);
 }
 
@@ -999,6 +1014,7 @@ img {
   display: flex;
   margin: 0;
   padding: 0;
+
   list-style: none;
 
   background-color: rgba(248, 247, 244, 0.2);
@@ -1022,6 +1038,7 @@ img {
   display: flex;
   margin: 0;
   padding: 0;
+
   list-style: none;
 
   background-color: rgba(248, 247, 244, 0.2);
@@ -1029,9 +1046,10 @@ img {
 
 .catalog {
   display: flex;
-  padding-bottom: 30px;
-  margin-bottom: 18px;
   flex-direction: column;
+  margin-bottom: 18px;
+  padding-bottom: 30px;
+
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
@@ -1044,6 +1062,7 @@ img {
   align-self: flex-end;
   margin: 0;
   padding: 0;
+
   list-style: none;
 }
 

@@ -67,9 +67,10 @@ body {
 
 .bg-first {
   background-color: #849d8f;
-  background-image: url("../img/slide-1-gradient.png");
-  background-repeat: no-repeat;
-  background-position: center top;
+  background-image: url("../img/slide-1.png"),
+  url("../img/slide-1-gradient.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center 83px, center top;
 }
 
 .inner-page {
@@ -249,7 +250,7 @@ img {
 .header {
   position: relative;
 
-  height: 78px;
+  min-height: 78px;
   padding-top: 9px;
 }
 
@@ -272,7 +273,8 @@ img {
 
 .navigation-list {
   display: flex;
-  width: 400px;
+  flex-wrap: wrap;
+  max-width: 500px;
   margin: 0;
   padding: 0;
   padding-top: 20px;
@@ -282,18 +284,18 @@ img {
 
 .navigation-link {
   margin: 0 14px;
+
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
-  /* border: none; */
-  /* box-shadow: 0 15px 0 -14px rgba(255, 255, 255, 0.2) */
-  /* text-decoration: underline; */
 }
 
 .navigation-current .navigation-link {
-  color: #ffffff;
-  padding: 7px 14px;
   margin: 0;
+  padding: 7px 14px;
+
+  color: #ffffff;
+
   background-color: #d07058;
   border: none;
   border-radius: 30px;
@@ -367,6 +369,7 @@ img {
 
 .user-block {
   display: flex;
+  max-width: 300px;
   margin: 0;
   margin-left: auto;
   padding: 0;
@@ -408,8 +411,8 @@ img {
 
 .entrance,
 .basket {
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 16px;
+  padding-left: 16px;
 
   font-weight: 500;
 }
@@ -425,10 +428,6 @@ img {
 
 .entrance:hover path {
   fill: #000000;
-}
-
-.basket {
-  padding-right: 18px;
 }
 
 /* Header inputs + subscribe */
@@ -483,6 +482,7 @@ img {
 
 .basket-full {
   color: #323232;
+
   background-color: rgba(255, 255, 255, 1);
 }
 
@@ -534,21 +534,36 @@ img {
 .slider {
   position: relative;
 
-  margin-bottom: -20px;
+  /* outline: 1px solid red; */
 }
 
 .slider-controls {
   position: absolute;
-  bottom: 72px;
+  bottom: 62px;
 }
 
 .control-button {
-  width: 20px;
-  height: 20px;
+  width: 21px;
+  height: 21px;
+
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.button-checked {
+  background-color: #ffffff;
+}
+
+.control-button:not(:last-child) {
+  margin-right: 5px;
 }
 
 .slide {
-  min-height: 584px;
+  min-height: 570px;
+  padding-top: 312px;
+  padding-bottom: 40px;
 }
 
 .slide-text {
@@ -562,12 +577,6 @@ img {
   line-height: 60px;
   font-weight: 700;
   text-align: center;
-}
-
-.slide-first {
-  background-image: url("../img/slide-1.png");
-  background-repeat: no-repeat;
-  background-position: top center;
 }
 
 /* Banners */

@@ -85,7 +85,8 @@ a {
   color: #ffffff;
   text-decoration: none;
 
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* возможно придется использовать linear-gradient */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  /* возможно придется использовать linear-gradient */
 }
 
 a:hover,
@@ -246,9 +247,10 @@ img {
 /* Header */
 
 .header {
-  min-height: 120px;
-  margin-bottom: -35px; /* TODO: fix */
-  padding-top: 10px;
+  position: relative;
+
+  height: 78px;
+  padding-top: 9px;
 }
 
 .inner-page .header {
@@ -257,13 +259,13 @@ img {
 
 .navigation {
   display: flex;
-  align-items: center;
 }
 
 .header-logo {
   display: block;
   width: 154px;
   height: 64px;
+  margin-right: 10px;
 
   border: none;
 }
@@ -272,35 +274,41 @@ img {
   display: flex;
   width: 400px;
   margin: 0;
-  margin-left: 3px;
   padding: 0;
+  padding-top: 20px;
 
   list-style: none;
 }
 
-.navigation-item:not(:last-child) {
-  margin-right: 30px; /* временно */
-}
-
 .navigation-link {
+  margin: 0 14px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
+  /* border: none; */
+  /* box-shadow: 0 15px 0 -14px rgba(255, 255, 255, 0.2) */
+  /* text-decoration: underline; */
 }
 
 .navigation-current .navigation-link {
   color: #ffffff;
-
+  padding: 7px 14px;
+  margin: 0;
   background-color: #d07058;
   border: none;
+  border-radius: 30px;
 }
 
 .navigation-link:hover,
 .navigation-link:focus {
+  margin: 0;
+  padding: 7px 14px;
+
   color: #323232;
 
   background-color: #ffffff;
   border: none;
+  border-radius: 30px;
 }
 
 .navigation-link:active {
@@ -359,12 +367,21 @@ img {
 
 .user-block {
   display: flex;
-  width: 244px;
   margin: 0;
   margin-left: auto;
   padding: 0;
+  padding-top: 13px;
 
   list-style: none;
+}
+
+.user-item {
+  display: flex;
+  align-items: center;
+  height: 33px;
+
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
 }
 
 .user-item:not(:last-child) {
@@ -372,15 +389,46 @@ img {
 }
 
 .search {
+  justify-content: center;
   width: 33px;
-  height: 33px;
 
-  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+}
+
+.search:hover,
+.entrance:hover {
+  color: #323232;
+
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.search:hover path {
+  fill: #000000;
 }
 
 .entrance,
 .basket {
+  padding-right: 15px;
+  padding-left: 15px;
+
   font-weight: 500;
+}
+
+.entrance svg,
+.basket svg {
+  margin-right: 8px;
+}
+
+.entrance path {
+  fill: #ffffff;
+}
+
+.entrance:hover path {
+  fill: #000000;
+}
+
+.basket {
+  padding-right: 18px;
 }
 
 /* Header inputs + subscribe */
@@ -435,6 +483,7 @@ img {
 
 .basket-full {
   color: #323232;
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .basket-row {
@@ -455,11 +504,15 @@ img {
 /* Shop info */
 
 .shop-info {
+  position: absolute;
+  right: 2.25%;
+
   text-align: right;
 }
 
 .work-time {
   margin: 0;
+  margin-bottom: 4px;
 
   font-weight: 700;
 }
@@ -496,7 +549,6 @@ img {
 
 .slide {
   min-height: 584px;
-  padding-top: 307px;
 }
 
 .slide-text {
@@ -593,7 +645,6 @@ img {
   flex-direction: column;
   align-items: center;
   width: 23.25%;
-  padding-top: 6px;
 }
 
 .product-item:not(:nth-child(4n)) {
@@ -858,6 +909,7 @@ img {
 .links-list {
   margin: 0;
   padding: 0;
+
   list-style: none;
 }
 
@@ -897,13 +949,15 @@ img {
   width: 100%;
   margin-bottom: 20px;
   padding: 10px;
+
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
   color: #323232;
+
   border: none;
-  box-shadow: 0 0 0 1px #d3d3d2;
   border-radius: 3px;
+  box-shadow: 0 0 0 1px #d3d3d2;
 }
 
 .feedback-input::placeholder {
@@ -916,8 +970,8 @@ img {
 }
 
 .feedback-input:focus {
-  box-shadow: 0 0 0 2px #8fbdec;
   outline: none;
+  box-shadow: 0 0 0 2px #8fbdec;
 }
 
 /* Catalog page */

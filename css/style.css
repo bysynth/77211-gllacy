@@ -1016,8 +1016,7 @@ img {
 }
 
 .blog-news {
-  min-height: 220px;
-  padding: 25px 21px;
+  padding: 23px 20px;
 
   color: #323232;
 
@@ -1030,6 +1029,7 @@ img {
 
 .blog-head {
   margin: 0;
+  margin-bottom: 3px;
 
   font-size: 16px;
   line-height: 22px;
@@ -1037,6 +1037,7 @@ img {
 }
 
 .blog-title {
+  margin: 0;
   width: 290px;
 }
 
@@ -1060,16 +1061,16 @@ img {
 /* Newsletter */
 
 .newsletter {
-  padding: 7px;
+  padding: 5px;
 
   color: #5a5a5a;
 
   background-color: #ffffff;
-  background-image: repeating-linear-gradient(135deg, #ffffff 0px, #ffffff 10px, #92cdff 10px, #92cdff 20px, #ffffff 20px, #ffffff 30px, #fe9e90 30px, #fe9e90 40px);
+  background-image: repeating-linear-gradient(135deg, #ffffff 0px, #ffffff 7px, #92cdff 7px, #92cdff 14px, #ffffff 14px, #ffffff 21px, #fe9e90 21px, #fe9e90 28px);
 }
 
 .newsletter-inner {
-  padding: 31px 21px;
+  padding: 29px 21px 34px 21px;
 
   background-color: #f8f7f4;
   border-radius: 15px;
@@ -1077,7 +1078,7 @@ img {
 
 .newsletter-text {
   margin: 0;
-  margin-bottom: 34px;
+  margin-bottom: 37px;
 
   font-size: 16px;
   line-height: 22px;
@@ -1088,7 +1089,8 @@ img {
 }
 
 .subscribe-input {
-  width: 100%;
+  width: 368px;
+  margin-right: 11px;
 }
 
 /* Map */

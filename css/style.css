@@ -122,7 +122,7 @@ img {
 
 .button {
   display: block;
-  padding: 10px;
+  padding: 8px 10px 12px 10px;
 
   font-size: 18px;
   line-height: 24px;
@@ -163,6 +163,7 @@ img {
   line-height: 44px;
   text-shadow: 0 2px 5px rgb(160, 32, 11, 0.76);
 
+  border-radius: 35px;
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
 }
 
@@ -184,6 +185,7 @@ img {
 
 .button-banner {
   display: inline-block;
+  align-self: flex-end;
   max-width: 200px;
   padding-right: 22px;
   padding-left: 22px;
@@ -740,8 +742,6 @@ img {
 
 .slider {
   position: relative;
-
-  /* outline: 1px solid red; */
 }
 
 .slider-controls {
@@ -768,7 +768,7 @@ img {
 }
 
 .slide {
-  min-height: 570px;
+  min-height: 569px;
   padding-top: 312px;
   padding-bottom: 40px;
 }
@@ -791,7 +791,7 @@ img {
 .banners {
   position: relative;
 
-  margin-bottom: 34px;
+  margin-bottom: 41px;
 }
 
 .banners-list {
@@ -821,8 +821,10 @@ img {
 }
 
 .banner-box {
-  min-height: 229px; /* временно */
-  padding: 21px;
+  display: flex;
+  flex-direction: column;
+  /* min-height: 229px; временно */
+  padding: 13px 21px 24px 18px;
 
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -830,6 +832,7 @@ img {
 
 .banner-title {
   margin: 0;
+  margin-bottom: 16px;
 
   font-size: 35px;
   line-height: 41px;
@@ -837,9 +840,16 @@ img {
 }
 
 .banner-text {
+  margin: 0;
+  margin-bottom: 46px;
+
   font-size: 18px;
   line-height: 22px;
   font-weight: 700;
+}
+
+.hits {
+  margin-bottom: 20px;
 }
 
 /* Products */
@@ -848,10 +858,13 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  margin-bottom: 30px;
   padding: 0;
 
   list-style: none;
+}
+
+.catalog .product-list {
+  margin-bottom: 30px;
 }
 
 .product-item {
@@ -899,7 +912,7 @@ img {
 
 .product-price {
   position: absolute;
-  bottom: 30px;
+  bottom: 8px;
   left: 0;
 
   margin: 0;
@@ -917,9 +930,8 @@ img {
 /* Seo */
 
 .seo {
-  min-height: 306px;
   margin-bottom: 40px;
-  padding: 27px 21px;
+  padding: 25px 21px;
 
   color: #323232;
 
@@ -944,14 +956,55 @@ img {
 }
 
 .seo-box {
-  width: 46.51%;
+  width: 48.86%;
 }
 
 .seo-text {
-  padding-left: 57px;
+  position: relative;
+
+  margin: 0;
+  padding-top: 21px;
+  padding-left: 55px;
 
   font-size: 16px;
   line-height: 22px;
+}
+
+.seo-right .seo-text {
+  padding-left: 57px;
+}
+
+.seo-text::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+
+  width: 49px;
+  height: 49px;
+}
+
+.ice-cream::before {
+  background-image: url("../img/ice-cream.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.eco::before {
+  background-image: url("../img/eco.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.cow::before {
+  background-image: url("../img/cow.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.thermometer::before {
+  background-image: url("../img/thermometer.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 /* Blog news */

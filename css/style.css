@@ -244,9 +244,7 @@ img {
 
 /* Slider control classes */
 
-.hidden {
-  display: none;
-}
+
 
 /* Header */
 
@@ -292,7 +290,7 @@ img {
 
 .navigation-current .navigation-link {
   margin: 0;
-  padding: 7px 14px;
+  padding: 5px 14px 7px 14px;
 
   color: #ffffff;
 
@@ -304,7 +302,7 @@ img {
 .navigation-item:hover .navigation-link,
 .navigation-link:focus {
   margin: 0;
-  padding: 7px 14px;
+  padding: 5px 14px 7px 14px;
 
   color: #323232;
 
@@ -881,14 +879,14 @@ img {
   margin-right: 2.32%;
 }
 
-.product-item:hover {
+/* .product-item:hover {
   background-color: rgba(248, 247, 244, 0.2);
 }
 
 .product-item:hover .button-view {
   display: block;
   order: 2;
-}
+} */
 
 .image-price {
   position: relative;
@@ -1495,4 +1493,8 @@ img {
   color: #ffffff;
 
   background-color: rgba(248, 247, 244, 0.2);
+}
+
+.hidden {
+  display: none;
 }

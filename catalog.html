@@ -141,12 +141,12 @@
       </ul>
     </nav>
     <div class="shop-info">
-      <p class="work-time">с 10 до 20, ежедневно</p>
+      <p class="work-time">С 10 до 20, ежедневно</p>
       <p class="telephone">8 812 450-25-25</p>
     </div>
   </header>
 
-  <main class="container">
+  <main class="main container">
     <ul class="breadcrumbs">
       <li class="breadcrumbs-item">
         <a class="breadcrumbs-link" href="index.html">Главная</a>
@@ -165,12 +165,14 @@
         <div class="filter-row">
           <fieldset class="form-block">
             <legend class="filter-legend">Сортировка:</legend>
-            <select class="custom-select" name="sort-field" id="sort-select">
-              <option value="popular" selected>по популярности</option>
-              <option value="less">сначала недорогие</option>
-              <option value="more">сначала дорогие</option>
-              <option value="fat">по жирности</option>
-            </select>
+            <div class="select-block">
+              <select class="custom-select" name="sort-field" id="sort-select">
+                <option class="custom-option" value="popular" selected>по популярности</option>
+                <option class="custom-option" value="less">сначала недорогие</option>
+                <option class="custom-option" value="more">сначала дорогие</option>
+                <option class="custom-option" value="fat">по жирности</option>
+              </select>
+            </div>
           </fieldset>
           <fieldset class="form-block">
             <div class="price-wrapper">
@@ -197,10 +199,10 @@
             <ul class="radio-list">
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter-radio" type="radio" name="fat-filter" id="fat-0" value="0">
-                <label class="filter-label" for="fat-0">0 %</label>
+                <label class="filter-label" for="fat-0">0%</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-radio" type="radio" name="fat-filter" id="fat-10" value="10">
+                <input class="visually-hidden filter-input filter-radio" type="radio" name="fat-filter" id="fat-10" value="10" checked>
                 <label class="filter-label" for="fat-10">до 10%</label>
               </li>
               <li class="filter-option">

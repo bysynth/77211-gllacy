@@ -1322,6 +1322,10 @@ img {
 
 /* Catalog page */
 
+.inner-page .header {
+  margin-bottom: 22px;
+}
+
 .breadcrumbs {
   display: flex;
   margin: 0;
@@ -1332,11 +1336,26 @@ img {
 }
 
 .breadcrumbs-item:not(:last-child) {
-  margin-right: 8px;
+  margin-right: 21px;
 }
 
 .breadcrumbs-current {
   border: none;
+}
+
+.breadcrumbs-link {
+  position: relative;
+}
+
+.breadcrumbs-link[href]::after {
+  content: "»";
+  position: absolute;
+  top: 0;
+  right: -14px;
+}
+
+.breadcrumbs-link[href]:hover::after {
+  color: #ffffff;
 }
 
 .page-title {

@@ -210,6 +210,7 @@ img {
 }
 
 .button-banner {
+  -ms-flex-item-align: end;
   align-self: flex-end;
   max-width: 200px;
   margin-top: auto;
@@ -219,8 +220,6 @@ img {
   padding-left: 22px;
 
   border-radius: 22px;
-
-  -ms-flex-item-align: end;
 }
 
 .button-view {
@@ -229,7 +228,10 @@ img {
 }
 
 .button-subscribe {
+  flex-shrink: 0;
   width: 130px;
+
+  -ms-flex-negative: 0;
 }
 
 .button-feedback {
@@ -246,6 +248,7 @@ img {
 }
 
 .button-filter {
+  -ms-flex-item-align: end;
   align-self: flex-end;
   padding: 7px 27px;
 
@@ -258,8 +261,6 @@ img {
   background-color: rgba(255, 255, 255, 0.2);
   border: 2px solid #ffffff;
   border-radius: 15px;
-
-  -ms-flex-item-align: end;
 }
 
 .button-filter:hover,
@@ -363,7 +364,10 @@ img {
   position: relative;
 }
 
-.dropdown:hover .dropdown-wrapper,
+.dropdown:hover .dropdown-wrapper {
+  visibility: visible;
+}
+
 .dropdown:focus-within > .dropdown-wrapper {
   visibility: visible;
 }
@@ -548,7 +552,7 @@ img {
 .header-input {
   padding: 10px 14px;
 
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
   font-weight: 700;
   color: #323232;
@@ -812,6 +816,7 @@ img {
 }
 
 .main {
+  display: block;
   margin-bottom: 18px;
 }
 
@@ -1021,11 +1026,10 @@ img {
   z-index: 3;
 
   display: block;
+  -ms-flex-item-align: end;
   align-self: flex-end;
   /* margin-bottom: 22px; */
   margin-bottom: 7.51%;
-
-  -ms-flex-item-align: end;
 }
 
 /* .product-item:hover .image-price,
@@ -1059,6 +1063,7 @@ img {
 .product-title {
   -ms-flex-order: 1;
   order: 1;
+  max-width: 100%;
   margin: 0;
   padding: 0 5px;
 
@@ -1262,6 +1267,13 @@ img {
 /* Newsletter */
 
 .newsletter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+      flex-direction: column;
   padding: 5px;
 
   color: #5a5a5a;
@@ -1287,7 +1299,6 @@ img {
 
 .newsletter-text {
   margin: 0;
-  /* margin-bottom: 37px; */
 
   font-size: 16px;
   line-height: 22px;
@@ -1518,12 +1529,13 @@ img {
 }
 
 .copyrights-logo {
+  -ms-flex-item-align: end;
   align-self: flex-end;
+  width: 108px;
+  height: 39px;
   margin-right: 80px;
 
   border-bottom: none;
-
-  -ms-flex-item-align: end;
 }
 
 .copyright {
@@ -1653,7 +1665,7 @@ img {
   position: relative;
   z-index: 16;
 
-  width: 120%;
+  width: 122%;
   height: 36px;
   padding-left: 11px;
 
@@ -1901,8 +1913,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
   margin: 0;
-  margin-left: auto;
   padding: 0;
 
   list-style: none;

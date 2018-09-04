@@ -1292,7 +1292,7 @@ img {
 .links-list {
   margin: 0;
   padding: 0;
-  padding-top: 14px;
+  padding-top: 13px;
 
   list-style: none;
 }
@@ -1302,7 +1302,7 @@ img {
 }
 
 .footer-link:not(:last-child) {
-  margin-bottom: 5px;
+  margin-bottom: 2px;
 }
 
 .link-important {
@@ -1326,13 +1326,30 @@ img {
 }
 
 .link {
+  display: inline-block;
+  vertical-align: sub;
+  position: relative;
   font-size: 13px;
   line-height: 18px;
+  border-bottom: none;
 }
 
-.footer-link.fix-link {
-  margin-top: 1px;
-  margin-bottom: 4px;
+.link::after {
+  content: "";
+  top: 16px;
+  left: 0;
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background-color:rgba(255, 255, 255, 0.2);
+}
+
+.link-important::after {
+  top: 17px;
+}
+
+.link:hover::after {
+  background-color: rgba(255, 188, 158, 0.3);
 }
 
 .copyrights {

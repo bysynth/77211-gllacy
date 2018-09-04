@@ -760,12 +760,18 @@ img {
   cursor: pointer;
 }
 
-.button-checked {
-  background-color: #ffffff;
-}
-
 .control-button:not(:last-child) {
   margin-right: 5px;
+}
+
+.control-button:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.button-checked,
+.button-checked:hover {
+  background-color: #ffffff;
+  cursor: default;
 }
 
 .slide {

@@ -1012,7 +1012,7 @@ img {
 
 .seo {
   margin-bottom: 40px;
-  padding: 25px 20px 23px 20px;
+  padding: 25px 20px 24px 20px;
 
   color: #323232;
 
@@ -1025,40 +1025,37 @@ img {
 
 .seo-lead {
   margin: 0;
+  margin-bottom: 22px;
 
   font-size: 24px;
   line-height: 30px;
   font-weight: 500;
 }
 
-.seo-wrapper {
+.seo-row {
   display: flex;
   justify-content: space-between;
 }
 
-.seo-box {
-  width: 48.86%;
+.seo-row:not(:last-child) {
+  margin-bottom: 21px;
 }
 
 .seo-text {
   position: relative;
-
+  width: 48.86%;
   margin: 0;
-  padding-top: 22px;
-  padding-left: 55px;
+  padding-left: 57px;
 
   font-size: 16px;
   line-height: 22px;
 }
 
-.seo-right .seo-text {
-  padding-left: 57px;
-}
 
 .seo-text::before {
   content: "";
   position: absolute;
-  top: 8px;
+  top: -14px;
   left: 0;
 
   width: 49px;

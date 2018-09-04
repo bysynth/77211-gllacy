@@ -73,14 +73,28 @@ body {
   background-position: center 83px, center top;
 }
 
+.bg-second {
+  background-color: #8996a6;
+  background-image: url("../img/slide-2.png"),
+  url("../img/slide-2-gradient.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center 83px, center top;
+}
+
+.bg-third {
+  background-color: #9d8b84;
+  background-image: url("../img/slide-3.png"),
+  url("../img/slide-3-gradient.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center 83px, center top;
+}
+
 .inner-page {
   background-color: #849d8f;
   background-image: url("../img/inner-bg-gradient.png");
   background-repeat: repeat-x;
   background-position: center top;
 }
-
-/* TODO: Body backgrounds */
 
 a {
   color: #ffffff;

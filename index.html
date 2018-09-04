@@ -321,7 +321,9 @@
     </div>
   </footer>
 <!-- Modals -->
-  <section class="modal modal-feedback">
+  <div class="overlay hidden"></div>
+
+  <section class="modal modal-feedback hidden">
     <h2 class="modal-title">Мы обязательно вам ответим!</h2>
     <form class="feedback-form" action="https://echo.htmlacademy.ru" method="POST">
       <label class="visually-hidden" for="feedback-name-field">Как вас зовут?</label>
@@ -329,12 +331,11 @@
       <label class="visually-hidden" for="feedback-email-field">Ваша почта для ответа?</label>
       <input class="feedback-input" type="email" name="feedback-email-field" id="feedback-email-field" placeholder="Ваша почта для ответа?">
       <label class="visually-hidden" for="feedback-text-field">Напишите что-нибудь</label>
-      <textarea class="feedback-input" name="feedback-text-field" id="feedback-text-field" cols="30" rows="10" placeholder="Напишите что-нибудь..."></textarea>
+      <textarea class="feedback-input feedback-textarea" name="feedback-text-field" id="feedback-text-field" placeholder="Напишите что-нибудь..."></textarea>
       <button class="button button-send" type="submit">Отправить</button>
     </form>
     <button class="modal-close" type="button">
       <span class="visually-hidden">Закрыть</span>
-      <!-- svg icon close -->
     </button>
   </section>
 

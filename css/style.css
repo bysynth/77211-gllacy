@@ -1043,6 +1043,7 @@ img {
 
 .seo-text {
   position: relative;
+
   width: 48.86%;
   margin: 0;
   padding-left: 57px;
@@ -1693,6 +1694,14 @@ img {
 .filter-checkbox:disabled + .filter-label::before {
   opacity: 0.4;
 }
+
+.filter-input:focus + .filter-label::before {
+  border-color: #82a8ce;
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+/* Catalog */
 
 .catalog {
   display: flex;

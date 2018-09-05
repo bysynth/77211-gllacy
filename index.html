@@ -249,10 +249,9 @@
       </div>
     </div>
     <section class="map">
-      <h2 class="visually-hidden">Карта проезда и контакты</h2>
-      <img class="map-image" src="img/map.jpg" alt="Наш адрес: ул. Большая Конюшенная 19/8, Санкт-Петербург" width="1200" height="430">
-
-      <div class="container">
+      <div class="container map-wrapper">
+        <h2 class="visually-hidden">Карта проезда и контакты</h2>
+        <img class="map-image" src="img/map.jpg" alt="Наш адрес: ул. Большая Конюшенная 19/8, Санкт-Петербург" width="1200" height="430">
         <div class="contacts">
           <p class="contacts-desc">Адрес главного офиса<br> и офлайн-магазина:</p>
           <p class="contacts-info">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
@@ -262,7 +261,9 @@
           <a class="button button-feedback" href="#">Форма обратной связи</a>
         </div>
       </div>
-
+      <div class="yandex-map" id="map">
+        <span class="visually-hidden">Яндекс карта</span>
+      </div>
     </section>
   </main>
 
@@ -339,6 +340,7 @@
     </button>
   </section>
 
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
   <script src="js/script.js"></script>
 
 </body>

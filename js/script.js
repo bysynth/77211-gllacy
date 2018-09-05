@@ -90,3 +90,60 @@ function init() {
   myMap.geoObjects.add(myPlacemark);
   myMap.behaviors.disable('scrollZoom');
 }
+
+//Slides
+
+var body = document.querySelector('body');
+
+var slideControl1 = document.querySelector('#slide-1');
+var slideControl2 = document.querySelector('#slide-2');
+var slideControl3 = document.querySelector('#slide-3');
+
+var slide1 = document.querySelector('.slide-first');
+var slide2 = document.querySelector('.slide-second');
+var slide3 = document.querySelector('.slide-third');
+
+slideControl1.addEventListener('click', function(evt) {
+  evt.preventDefault();
+  if (!slideControl1.classList.contains('button-checked')) {
+    slideControl1.classList.add('button-checked');
+    slideControl2.classList.remove('button-checked');
+    slideControl3.classList.remove('button-checked');
+    slide1.classList.remove('hidden');
+    slide2.classList.add('hidden');
+    slide3.classList.add('hidden');
+    body.classList.add('bg-first');
+    body.classList.remove('bg-second');
+    body.classList.remove('bg-third');
+  }
+});
+
+slideControl2.addEventListener('click', function(evt) {
+  evt.preventDefault();
+  if (!slideControl2.classList.contains('button-checked')) {
+    slideControl1.classList.remove('button-checked');
+    slideControl3.classList.remove('button-checked');
+    slideControl2.classList.add('button-checked');
+    slide1.classList.add('hidden');
+    slide2.classList.remove('hidden');
+    slide3.classList.add('hidden');
+    body.classList.remove('bg-third');
+    body.classList.remove('bg-first');
+    body.classList.add('bg-second');
+  }
+});
+
+slideControl3.addEventListener('click', function(evt) {
+  evt.preventDefault();
+  if (!slideControl3.classList.contains('button-checked')) {
+    slideControl1.classList.remove('button-checked');
+    slideControl2.classList.remove('button-checked');
+    slideControl3.classList.add('button-checked');
+    slide1.classList.add('hidden');
+    slide2.classList.add('hidden');
+    slide3.classList.remove('hidden');
+    body.classList.remove('bg-first');
+    body.classList.remove('bg-second');
+    body.classList.add('bg-third');
+  }
+});

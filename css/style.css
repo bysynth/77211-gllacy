@@ -51,7 +51,7 @@ html {
 
 body {
   min-width: 900px;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
 
   font-family: "Roboto", "Arial", sans-serif;
@@ -64,6 +64,9 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.inner-container {
   padding: 0 2.25%;
 }
 
@@ -844,7 +847,8 @@ img {
   margin-right: 5px;
 }
 
-.control-button:hover {
+.control-button:hover,
+.control-button:focus {
   background-color: rgba(255, 255, 255, 0.4);
 }
 
@@ -1333,7 +1337,6 @@ img {
 .map-image {
   position: relative;
   z-index: 80;
-
   max-width: 1200px;
   height: 430px;
 }
@@ -1394,11 +1397,14 @@ img {
 /* Footer */
 
 .footer {
+  min-height: 60px;
+  margin-bottom: 25px;
+}
+
+.footer-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 60px;
-  margin-bottom: 25px;
 }
 
 /* Social */

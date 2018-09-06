@@ -76,11 +76,11 @@ var myPlacemark;
 
 function init() {
   myMap = new ymaps.Map('map', {
-    center: [59.93871825429445,30.32953080565307],
+    center: [59.939244772421496,30.3292128518982],
       zoom: 16,
       controls: []
     }),
-  myPlacemark = new ymaps.Placemark([59.93864288602791,30.323028281395565], {}, {
+  myPlacemark = new ymaps.Placemark([59.93864183091133,30.32302231349179], {}, {
     iconLayout: 'default#image',
     iconImageHref: 'img/pin-with-shadow.png',
     iconImageSize: [218, 142],

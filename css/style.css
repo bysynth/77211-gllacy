@@ -304,7 +304,7 @@ img {
   display: block;
   width: 154px;
   height: 64px;
-  margin-right: 10px;
+  margin-right: 9px;
 
   border: none;
 }
@@ -837,7 +837,7 @@ img {
 
 .slider-controls {
   position: absolute;
-  bottom: 62px;
+  bottom: 63px;
 }
 
 .control-button {
@@ -1059,7 +1059,7 @@ img {
 .image-price {
   position: relative;
 
-  margin-bottom: 13px;
+  margin-bottom: 12px;
 }
 
 .product-title {
@@ -1108,7 +1108,7 @@ img {
   position: relative;
 
   display: inline-block;
-  padding-right: 34px;
+  padding-right: 35px;
 
   vertical-align: top;
 }
@@ -1116,8 +1116,8 @@ img {
 .price-value::after {
   content: "";
   position: absolute;
-  top: 3px;
-  right: -4px;
+  top: 4px;
+  right: -3px;
 
   width: 40px;
   height: 45px;
@@ -1135,7 +1135,7 @@ img {
 
 .seo {
   margin-bottom: 40px;
-  padding: 25px 20px 24px 20px;
+  padding: 24px 20px 25px 20px;
 
   color: #323232;
 
@@ -1148,7 +1148,7 @@ img {
 
 .seo-lead {
   margin: 0;
-  margin-bottom: 22px;
+  margin-bottom: 21px;
 
   font-size: 24px;
   line-height: 30px;
@@ -1165,13 +1165,13 @@ img {
 }
 
 .seo-row:not(:last-child) {
-  margin-bottom: 21px;
+  margin-bottom: 22px;
 }
 
 .seo-text {
   position: relative;
 
-  width: 48.86%;
+  width: 48.865%;
   margin: 0;
   padding-left: 57px;
 
@@ -1182,7 +1182,7 @@ img {
 .seo-text::before {
   content: "";
   position: absolute;
-  top: -14px;
+  top: -12px;
   left: 0;
 
   width: 49px;
@@ -1225,7 +1225,7 @@ img {
 }
 
 .blog-news {
-  padding: 23px 19px;
+  padding: 22px 19px;
 
   color: #323232;
 
@@ -1237,7 +1237,7 @@ img {
 
 .blog-head {
   margin: 0;
-  margin-bottom: 3px;
+  margin-bottom: 5px;
 
   font-size: 16px;
   line-height: 22px;
@@ -1245,7 +1245,7 @@ img {
 }
 
 .blog-title {
-  width: 290px;
+  width: 300px;
   margin: 0;
 }
 
@@ -1293,7 +1293,7 @@ img {
   -ms-flex-direction: column;
       flex-direction: column;
   min-height: 210px;
-  padding: 29px 21px 34px 21px;
+  padding: 28px 21px 35px 21px;
 
   background-color: #f8f7f4;
   border-radius: 15px;
@@ -1464,7 +1464,7 @@ img {
 .links-list {
   margin: 0;
   padding: 0;
-  padding-top: 13px;
+  padding-top: 12px;
 
   list-style: none;
 }
@@ -1522,7 +1522,7 @@ img {
 }
 
 .link-important::after {
-  top: 17px;
+  top: 16px;
 }
 
 .link:hover::after {
@@ -1563,13 +1563,14 @@ img {
 
 .copyright {
   margin: 0;
+  margin-top: 2px;
   margin-left: auto;
 }
 
 /* Catalog page */
 
 .inner-page .header {
-  margin-bottom: 22px;
+  margin-bottom: 20px;
 }
 
 .breadcrumbs {
@@ -1580,7 +1581,7 @@ img {
       flex-wrap: wrap;
   max-width: 860px;
   margin: 0;
-  margin-bottom: 1px;
+  margin-bottom: 3px;
   padding: 0;
 
   list-style: none;
@@ -1592,10 +1593,12 @@ img {
 
 .breadcrumbs-item:not(:last-child)::after {
   content: "»";
-  color: #ffffff;
   position: absolute;
   top: 0;
   right: -14px;
+
+  color: #ffffff;
+
   cursor: default;
 }
 
@@ -1613,7 +1616,7 @@ img {
 
 .page-title {
   margin: 0;
-  margin-bottom: 28px;
+  margin-bottom: 27px;
 
   font-size: 35px;
   line-height: 41px;
@@ -1624,7 +1627,7 @@ img {
 
 .filters {
   width: 860px;
-  margin-bottom: 40px;
+  margin-bottom: 41px;
 }
 
 .filter-form {
@@ -1721,6 +1724,7 @@ img {
   z-index: 17;
 
   background-image: url("../img/icon-down-dir-black.svg");
+  cursor: pointer;
 }
 
 .custom-option {
@@ -1741,7 +1745,7 @@ img {
 }
 
 .price-input {
-  width: 25px;
+  width: 24px;
 
   font: inherit;
   color: inherit;
@@ -1883,7 +1887,7 @@ img {
 .checkbox-list .filter-label {
   padding-top: 5px;
   padding-bottom: 5px;
-  padding-left: 14px;
+  padding-left: 15px;
 }
 
 .checkbox-list .filter-label::before {
@@ -1929,7 +1933,7 @@ img {
 .catalog .products-list {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 42px;
+  margin-bottom: 44px;
 }
 
 .catalog .product-item {

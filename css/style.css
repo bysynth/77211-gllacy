@@ -859,6 +859,10 @@ img {
   background-color: rgba(255, 255, 255, 0.4);
 }
 
+.control-button:active {
+  background-color: rgba(255, 255, 255, 1);
+}
+
 .button-checked,
 .button-checked:hover {
   background-color: #ffffff;
@@ -1112,13 +1116,13 @@ img {
 .price-value::after {
   content: "";
   position: absolute;
-  top: 9px;
-  right: 0;
+  top: 3px;
+  right: -4px;
 
-  width: 30px;
-  height: 35px;
+  width: 40px;
+  height: 45px;
 
-  background-image: url("../img/ruble.png");
+  background-image: url("../img/ruble-with-shadow.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -1583,6 +1587,24 @@ img {
   list-style: none;
 }
 
+.breadcrumbs-item {
+  position: relative;
+}
+
+.breadcrumbs-item:not(:last-child)::after {
+  content: "»";
+  color: #ffffff;
+  position: absolute;
+  top: 0;
+  right: -14px;
+  cursor: default;
+}
+
+/* .breadcrumbs-link[href]:hover::after,
+.breadcrumbs-link[href]:focus::after {
+  color: #ffffff;
+} */
+
 .breadcrumbs-item:not(:last-child) {
   margin-right: 21px;
 }
@@ -1592,21 +1614,6 @@ img {
 }
 
 .breadcrumbs-current:hover {
-  color: #ffffff;
-}
-
-.breadcrumbs-link {
-  position: relative;
-}
-
-.breadcrumbs-link[href]::after {
-  content: "»";
-  position: absolute;
-  top: 0;
-  right: -14px;
-}
-
-.breadcrumbs-link[href]:hover::after {
   color: #ffffff;
 }
 
@@ -1791,6 +1798,10 @@ img {
   background-repeat: no-repeat;
   background-position: 0 0;
   cursor: pointer;
+}
+
+.range-controls .toggle:hover {
+  transform: scale(1.11);
 }
 
 .range-controls .max-toggle {

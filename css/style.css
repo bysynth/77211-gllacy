@@ -209,6 +209,9 @@ img {
 .button-entrance {
   display: inline-block;
   width: 100px;
+  margin-right: 16px;
+
+  vertical-align: middle;
 }
 
 .button-banner {
@@ -476,7 +479,7 @@ img {
   margin: 0;
   margin-left: auto;
   padding: 0;
-  padding-top: 13px;
+  padding-top: 14px;
 
   list-style: none;
 }
@@ -488,7 +491,7 @@ img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 33px;
+  height: 32px;
 
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 30px;
@@ -641,12 +644,6 @@ img {
   margin-bottom: 18px;
 }
 
-.button-entrance {
-  margin-right: 16px;
-
-  vertical-align: middle;
-}
-
 /* Entrance + blog links */
 
 .entrance-links {
@@ -683,6 +680,15 @@ img {
 }
 
 /* Inner basket */
+
+.basket-link {
+  color: #323232;
+}
+
+.basket-link:hover,
+.basket-link:focus {
+  color: #e84d37;
+}
 
 .basket-full .dropdown-wrapper {
   top: 33px;
@@ -944,8 +950,6 @@ img {
 
 .banner-text {
   margin: 0;
-  /* margin-bottom: 46px; */
-  /* margin-bottom: 6.4%; */
 
   font-size: 18px;
   line-height: 22px;
@@ -1003,7 +1007,6 @@ img {
 
 .product-item:hover .product-hover {
   position: absolute;
-  /* top: -6px; */
   top: -1.852%;
   left: -4.875%;
   z-index: 2;
@@ -1016,7 +1019,6 @@ img {
   justify-content: center;
   width: 109.783%;
   height: 125%;
-  /* padding-top: 6px; */
   padding-top: 2.248%;
 
   background-color: rgba(248, 247, 244, 0.2);
@@ -1032,16 +1034,8 @@ img {
   display: block;
   -ms-flex-item-align: end;
   align-self: flex-end;
-  /* margin-bottom: 22px; */
   margin-bottom: 7.51%;
 }
-
-/* .product-item:hover .image-price,
-.product-item:hover .product-title {
-  padding: 0 4.44%;
-} */
-
-/* --------------------------------- */
 
 .hit-badge::before {
   content: "";
@@ -1111,6 +1105,8 @@ img {
 
   display: inline-block;
   padding-right: 34px;
+
+  vertical-align: top;
 }
 
 .price-value::after {
@@ -1178,7 +1174,6 @@ img {
   font-size: 16px;
   line-height: 22px;
 }
-
 
 .seo-text::before {
   content: "";
@@ -1338,6 +1333,7 @@ img {
 .map-image {
   position: relative;
   z-index: 80;
+
   max-width: 1200px;
   height: 430px;
 }

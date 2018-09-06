@@ -552,6 +552,7 @@ img {
 /* Header inputs + subscribe */
 
 .header-input {
+  height: 44px;
   padding: 10px 14px;
 
   font-size: 16px;
@@ -2103,6 +2104,7 @@ img {
 
 .feedback-input {
   width: 265px;
+  height: 42px;
   margin-bottom: 22px;
   padding-top: 9px;
   padding-right: 10px;

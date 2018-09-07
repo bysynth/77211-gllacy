@@ -688,6 +688,7 @@ img {
 .basket-link:hover,
 .basket-link:focus {
   color: #e84d37;
+
   border: none;
 }
 

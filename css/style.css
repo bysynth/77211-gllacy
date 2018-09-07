@@ -1133,7 +1133,7 @@ img {
 
 .seo {
   margin-bottom: 40px;
-  padding: 24px 20px 25px 20px;
+  padding: 24px 20px 6px 20px;
 
   color: #323232;
 
@@ -1146,7 +1146,7 @@ img {
 
 .seo-lead {
   margin: 0;
-  margin-bottom: 21px;
+  margin-bottom: 23px;
 
   font-size: 24px;
   line-height: 30px;
@@ -1154,24 +1154,26 @@ img {
   letter-spacing: 0.2px;
 }
 
-.seo-row {
+.seo-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0;
+  padding: 0;
 
-.seo-row:not(:last-child) {
-  margin-bottom: 22px;
+  list-style: none;
 }
 
 .seo-text {
   position: relative;
 
   width: 48.865%;
-  margin: 0;
+  margin-bottom: 20px;
   padding-left: 57px;
 
   font-size: 16px;
@@ -1666,6 +1668,7 @@ img {
 
 .select-block {
   position: relative;
+
   width: 194px;
   padding-right: 16px;
   overflow: hidden;

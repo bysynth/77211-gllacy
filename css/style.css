@@ -1080,10 +1080,6 @@ img {
 }
 
 .product-image {
-  margin: 0;
-}
-
-.product-image img {
   border-radius: 50%;
 }
 

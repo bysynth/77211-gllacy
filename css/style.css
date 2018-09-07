@@ -1059,6 +1059,8 @@ img {
 .image-price {
   position: relative;
 
+  max-width: 100%;
+  min-height: 200px;
   margin-bottom: 12px;
 }
 
@@ -1088,6 +1090,7 @@ img {
 .product-price {
   position: absolute;
   bottom: 9px;
+  /* top: 10%; */
   left: 0;
 
   display: -webkit-box;
@@ -1797,7 +1800,8 @@ img {
 }
 
 .range-controls .toggle:hover {
-  transform: scale(1.11);
+  -webkit-transform: scale(1.11);
+          transform: scale(1.11);
 }
 
 .range-controls .max-toggle {

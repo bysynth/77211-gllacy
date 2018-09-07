@@ -1090,7 +1090,6 @@ img {
 .product-price {
   position: absolute;
   bottom: 9px;
-  /* top: 10%; */
   left: 0;
 
   display: -webkit-box;

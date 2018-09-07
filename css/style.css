@@ -1670,7 +1670,7 @@ img {
 
 .select-block {
   position: relative;
-
+  width: 194px;
   padding-right: 16px;
   overflow: hidden;
 
@@ -1698,7 +1698,10 @@ img {
   z-index: 16;
 
   width: 122%;
-  height: 36px;
+  height: 38px;
+  margin-top: -1px;
+  margin-bottom: -1px;
+  margin-left: -1px;
   padding-left: 11px;
 
   font-size: 16px;

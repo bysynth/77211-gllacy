@@ -1734,20 +1734,12 @@ img {
   color: #323232;
 }
 
-.price-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.price-wrapper .filter-legend {
-  margin-right: 2px;
-}
-
 .price-input {
-  width: 24px;
+  width: 26px;
+  height: 16px;
 
   font: inherit;
+  vertical-align: top;
   color: inherit;
 
   background-color: transparent;
